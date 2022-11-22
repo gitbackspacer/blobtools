@@ -28,8 +28,9 @@ def main():
 
     # Parse names.dmp, nodes.dmp
     nodesDB_default = join(dirname(abspath(__file__)), "../data/nodesDB.txt")
+    
     if nodesDB_f:
- 	     nodesDB, nodesDB_f = BtIO.parseNodesDB(nodes=nodes_f, names=names_f, nodesDB=nodesDB_f, nodesDBdefault=nodesDB_default)
+       nodesDB, nodesDB_f = BtIO.parseNodesDB(nodes=nodes_f, names=names_f, nodesDB=nodesDB_f, nodesDBdefault=nodesDB_default)
     else:    
        nodesDB, nodesDB_f = BtIO.parseNodesDB(nodes=nodes_f, names=names_f, nodesDB=None, nodesDBdefault=nodesDB_default)
 
