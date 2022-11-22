@@ -23,8 +23,7 @@ def main():
     args = docopt(__doc__)
     names_f = args['--names']
     nodes_f = args['--nodes']
-  	nodesDB_f = args['--nodesDB']
-
+    nodesDB_f = args['--nodesDB']  # added
 
     # Parse names.dmp, nodes.dmp
     nodesDB_default = join(dirname(abspath(__file__)), "../data/nodesDB.txt")
